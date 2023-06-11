@@ -1,0 +1,45 @@
+/*Agregando reglas para la altura y ancho*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+#map{
+    height: 90vh;/*ALTURA*/
+    width: 100vw;/*ANCHO*/
+}
+/*se agregan las reglas para el encabezado de la pagina, tipo de letra, color, fondo, margenes etc...*/
+header{
+    font-family: 'Anton', sans-serif;
+    color: #ccb90e;
+    background-color: #1D8348;
+    margin-top: 7px;
+}
+
+
+/*Se agregan las reglas de diseño de el pie de pagina, tipo de letra, color, margenes, tamaño, posicion etc...*/
+.footer{
+
+    font-family: 'Didact Gothic', sans-serif;
+
+    position: fixed;
+    
+    text-align: center;
+
+    bottom: 0;
+    
+    width: 100%;
+    
+    height: 32px;
+    
+    padding-bottom: 70px;
+    
+    background: #186A3B;
+    
+    border-top: 2px solid #ccb90e ;
+    
+    z-index:2000;
+    
+    }
+
+.footer a:hover{
+    background-color: black;
+    color: #79765e;
+    border-color: rgb(201, 132, 195);
+}

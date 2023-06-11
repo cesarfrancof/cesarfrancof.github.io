@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!--Estas son las conexiones de los tipos de letra tomados de google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+
+    <!--Este es el llamado al archivo de estilos-->
+    <link rel="stylesheet" href="estilos_mapa.css">
+    <!--Este link es el llamado para font awesome que es el encargado de cargar los iconos utilizados-->
+    <script src="https://kit.fontawesome.com/1415dace42.js" crossorigin="anonymous"></script>
+
+    <title>Campus UAEMéx</title>
+    
+
+
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Campus Universitarios UAEMÉX</h1>
+
+    <!-- se agrega el menu de seleccion -->
+    <select name="select-campus" id="select-campus">
+        <option value="-1">Selecciona el Campus</option>
+        <option value="19.132076534417365, -98.78647380352596">Centro Universitario Amecameca</option>
+
+        <option value="19.777693206467617, -99.84378050691761">Centro Universitario UAEM Atlacomulco</option>
+
+        <option value="19.598488863789076, -99.05752950536576">Centro Universitario UAEM Ecatepec</option>
+
+        <option value="19.045302330135314, -100.05187414770397">Centro Universitario UAEM Temascaltepec</option>
+
+        <option value="18.968530306955767, -99.61233435935188">Centro Universitario UAEM Tenancingo</option>
+
+        <option value="19.796746420975225, -98.77642779546694">Centro Universitario UAEM Teotihuacán</option>
+
+        <option value="19.43505178685682, -98.9175047305091">Centro Universitario UAEM Texcoco</option>
+
+        <option value="19.299646118807363, -98.95610409002926">Centro Universitario UAEM Valle de Chalco</option>
+
+        <option value="19.585759499965057, -99.28349740511891">Centro Universitario UAEM Valle de México</option>
+
+        <option value="19.422811964506664, -99.02039399002729">Centro Universitario UAEM Nezahualcóyotl</option>
+
+        <option value="19.828483107666248, -99.07682731700869">Centro Universitario UAEM Zumpango</option>
+
+    </select>
+        </div>
+    </header>
+    
+    <div id="map"></div>
+
+
+
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+
+<script src="script_mapa.js"></script>
+</body>
+
+<!--Este es el pie de pagina-->
+<footer>
+
+    <div class="footer">
+
+        <div class="media-icons">
+            
+            <p>Diseño y Visualización de la Información  6I 2023A</p> <!--informacion que aparece en el pie de pagina-->
+
+            <!--A continuacion se agregan los iconos personalizados y los enlaces de las redes sociales de UAEMEX-->
+
+            <a href="https://www.facebook.com/pages/Universidad-Aut%C3%B3noma-del-Estado-de-M%C3%A9xico/102011606507372" target="_blank" style="color:#ccb90e"><i class="fa-brands fa-facebook fa-beat"></i></i></a>
+
+            <a href="https://twitter.com/UAEM_MX" target="_blank"  style="color: #ccb90e"><i class="fa-brands fa-twitter fa-bounce"></i></a>
+
+            <a href="https://www.instagram.com/uaemex_oficial/?hl=es" target="_blank"  style="color:#ccb90e"><i class="fa-brands fa-instagram fa-shake"></i></a>
+
+            <a href="https://www.youtube.com/@uaemextv8533" target="_blank"  style="color:#ccb90e"><i class="fa-brands fa-square-youtube fa-flip"></i></a>
+
+        </div>
+
+    </div>
+
+ </footer>
+
+</html>
